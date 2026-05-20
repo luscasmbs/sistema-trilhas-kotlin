@@ -1,11 +1,10 @@
 package data
 
+import enums.CourseCategory
 import enums.StudentSituation
 
 data class Student(
-    val id: Int,
-    val name: String,
-    val email: String,
-    val password: String,
-    val student: StudentSituation,
+    val trail: MutableList<Int> = mutableListOf(),
+    val student: StudentSituation = StudentSituation.ATIVO,
+    val courses: MutableList<Int> = mutableListOf(),
 )
