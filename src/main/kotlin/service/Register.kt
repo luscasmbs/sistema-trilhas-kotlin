@@ -1,5 +1,7 @@
 package service
 
+import app.main
+
 fun register(){
 println("Você quer se cadastrar como professor ou aluno?" +
         "\n1- como professor" +
@@ -8,6 +10,6 @@ println("Você quer se cadastrar como professor ou aluno?" +
     var op = readLine()?.toIntOrNull()
     when(op) {
         1 -> RegisterTeacher().RegisterTeacher()
-
+        2 -> main()
     }
 }

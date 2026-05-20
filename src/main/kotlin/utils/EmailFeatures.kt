@@ -4,17 +4,20 @@ import app.main
 import service.register
 
 class EmailFeatures {
-    fun emailfeat(email: String){
-       val vera = email.contains("@")
-        if(vera == false){
-            println("Erro: O email é inválido")
-            return
+    fun emailfeat(email: String): Boolean {
+        val TemA = email.contains("@")
+        val Temcom = email.contains(".com")
+
+        if (TemA == true && Temcom == true) {
+            return true
         }
-        val com = email.contains(".com")
-        if(vera == false){
+        if (TemA == false && Temcom == false) {
             println("Erro: o email é inválido")
-            return
+            return false
+
+
         }
-        return
-        }
+        return false
+
+    }
 }

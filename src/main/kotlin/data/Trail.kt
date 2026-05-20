@@ -1,5 +1,4 @@
 package data
-import data.courses
 import enums.TrailStatus
 
 data class Trail(
