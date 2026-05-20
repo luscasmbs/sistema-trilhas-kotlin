@@ -8,13 +8,13 @@ class EmailFeatures {
        val vera = email.contains("@")
         if(vera == false){
             println("Erro: O email é inválido")
-            return register()
+            return
         }
         val com = email.contains(".com")
         if(vera == false){
             println("Erro: o email é inválido")
-            return register()
+            return
         }
-        return register()
+        return
         }
 }

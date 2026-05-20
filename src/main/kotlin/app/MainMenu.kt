@@ -17,7 +17,7 @@ fun mainmenu(){
         when(op){
             1 -> login()
             2 -> register()
-            0 -> mainmenu()
+            0 -> break
             else -> println("Opção inválida. Tente novamente.")
         }
     }
