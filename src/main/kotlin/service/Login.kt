@@ -31,7 +31,7 @@ fun login(){
         if (Userfind.role == UserType.PROFESSOR) {
             Teacherm()
         } else if (Userfind.role == UserType.ALUNO){
-            studentmenu()
+            studentmenu(Userfind)
         }
     } else {
         println("\n Erro: Email ou senha incorretos! Usuário não encontrado.")

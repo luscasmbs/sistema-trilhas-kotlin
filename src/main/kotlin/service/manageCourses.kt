@@ -6,7 +6,7 @@ import enums.CourseCategory
 import enums.CourseLevel
 
 fun managecourses(){
-    while (true) { // 💡 Mantém o menu aberto até digitar 0
+    while (true) {
         println("=================================\n " +
                 "Gerenciar cursos\n" +
                 "=================================\n\n" +

@@ -38,7 +38,7 @@ fun viewStudentProgress() {
 
     if (trilha.course.isEmpty()) {
         println("Trilha: ${trilha.name}")
-        println("📈 Progresso: 0.00% (Aviso: Esta trilha ainda não possui cursos associados).")
+        println("Progresso: 0.00% (Aviso: Esta trilha ainda não possui cursos associados).")
         return
     }
 

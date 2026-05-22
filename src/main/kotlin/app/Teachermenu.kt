@@ -1,8 +1,8 @@
 package app
 
-import data.MemoryStorage.courses
 import main.kotlin.app.teachermoremenu
 import main.kotlin.service.managestudents
+import service.createtrail
 import service.managecourses
 
 fun Teacherm() {
@@ -21,6 +21,7 @@ fun Teacherm() {
         when (op) {
             1 -> managestudents()
             2 -> managecourses()
+            3 -> createtrail()
             4 -> teachermoremenu()
             0 -> {
                 println("Efetuando logout...")

@@ -2,16 +2,19 @@ package main.kotlin.app
 
 import app.Teacherm
 import service.enrollStudent
+import service.exportcsv
+import service.manageTrail
 import service.viewStudentProgress
 
 fun teachermoremenu(){
-    while (true) { // 💡 ADICIONADO: Mantém o usuário aqui dentro até digitar 0
+    while (true) {
         println("=================================\n " +
                 "Sistema de Alunos e Trilhas - Mais Opções\n" +
                 "=================================\n\n" +
                 "1 - Matricular aluno\n" +
                 "2 - Registrar progresso\n" +
                 "3 - Relatórios\n" +
+                "4 - Associar Curso a uma Trilha\n" +
                 "0 - Voltar\n")
         print("> ")
 
@@ -25,8 +28,9 @@ fun teachermoremenu(){
                 viewStudentProgress()
             }
             3 -> {
-                println("Exibindo relatórios...")
+                exportcsv()
             }
+            4 -> manageTrail()
             0 -> {
                 println("Voltando ao menu principal...")
                 return
