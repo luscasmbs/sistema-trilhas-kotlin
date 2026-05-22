@@ -8,7 +8,5 @@ data class Trail(
     val status: TrailStatus
 ){
     private val courses = mutableListOf<Course>()
-    fun addCourse(course: Course){
-        courses.add(course)
-    }
+
 }

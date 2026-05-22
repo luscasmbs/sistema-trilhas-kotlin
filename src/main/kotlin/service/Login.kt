@@ -1,6 +1,7 @@
 package service
 
 import app.Teacherm
+import app.studentmenu
 import utils.EmailFeatures
 import data.MemoryStorage
 import enums.UserType
@@ -29,6 +30,8 @@ fun login(){
     if (Userfind != null) {
         if (Userfind.role == UserType.PROFESSOR) {
             Teacherm()
+        } else if (Userfind.role == UserType.ALUNO){
+            studentmenu()
         }
     } else {
         println("\n Erro: Email ou senha incorretos! Usuário não encontrado.")
