@@ -5,7 +5,7 @@ de alunos, cursos, trilhas e matrículas no console.
 ---
 
 ## 📌 Objetivo do Projeto
-O propósito deste sistema é demonstrar a aplicação prática e rigorosa das competências técnicas exigidas pelas rubricas de avaliação da WorldSkills:
+O propósito deste sistema é aprender na pŕatica o desenvolvimento com POO, além de começar a desenvolver códigos mais completos para a competição da WorldSkills:
 * **Programação Orientada a Objetos (POO):** Mitigação de acoplamento rígido através de composição e blindagem de estados por encapsulamento.
 * **Organização em Camadas (SoC):** Separação clara entre os mecanismos de captura de dados (Console) e os motores de processamento (Services).
 * **Robustez de Fluxo (UX/CLI):** Construção de menus isolados que evitam o empilhamento de chamadas na memória da JVM (*StackOverflowError*).
